@@ -1,1 +1,16 @@
+This repository contain all files necessary recreate molecular dynamics (MD) simulation results from publication "AI-Based Discovery and CryoEM Structural Elucidation of a
+KATP Channel Pharmacochaperone" by ElSheikh, Shyng et al.
+
+List of files:
+
+Analysis.py  - Python script for MD data analysis
+
+MD - folder with starting files for gromacs and with final frame for all 5 simulations (due to their sizes, MD trajectories are available upon request)
+  run1-5.gro - final frames of 5 MD simulation repeats
+  run1-5.gro - portable binary run input file. This file contains the starting structure of the simulation, the molecular topology and all the simulation parameters.
+  step5_input_lig.gro - initial structure of the system (from charmm-gui + added AKATP ligand)
+  step5_input_lig.pdb - initial structure of the system (from charmm-gui + added AKATP ligand)
+  step7_production.mdp - MD parameters for gromacs
+  topol.top - topology input for gromacs
+  toppar - folder with all topology data needed for simulation
 
